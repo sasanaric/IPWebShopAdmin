@@ -1,0 +1,114 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.button-style {
+    background-color: #650097;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    transition: background 0.3s;
+}
+.button-style-attribute {
+    background-color: #73729C;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    transition: background 0.3s;
+    margin-left: 15px;
+}
+
+.button-style:hover {
+    background-color: #47006b;
+}
+.button-style-attribute:hover {
+    background-color: #47006b;
+}
+th {
+    background-color: #650097;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+thead{
+    font-size: 20px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+}
+tr:last-of-type {
+    border-bottom: 2px solid #650097;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+td {
+    padding: 10px 20px;
+    text-align: center;
+}
+button{
+    background-color: #47006b;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    float: right;
+}
+button :hover{
+    background-color: #650097;
+}
+.category-row {
+    background-color: #d9d9d9;
+}
+/* Styling for alternate category rows for clearer separation */
+.category-row:nth-child(2n-1) {
+    background-color: #e9e9e9;  /* A slightly different grey for alternate categories */
+}
+
+.category-row:nth-child(2n-1) + tr .attribute-table td {
+    background-color: #e9e9e9;  /* Make the attributes of alternate categories match */
+}
+.attributes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* adjust this value for spacing */
+    font-size: 18px;
+    width: 70%;
+}
+.grid-item-name{
+    justify-content: center;
+    margin-right: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.grid-item-actions{
+    justify-content: start;
+}
+.grid-item-name, .grid-item-actions {
+    display: flex;
+    align-items: center;
+}
